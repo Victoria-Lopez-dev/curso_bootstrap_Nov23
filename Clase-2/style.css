@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+:root{
+    --colorAzul:#4545e1;
+    --espacios:12px;
+}
+
+h1{
+    font-size: 47px;
+    font-family:'Rubik Bubb'
+}
+h2{
+    margin-top: var(--espacios);
+}
+.alineacion-nueva{
+    text-decoration: line-through!important;
+}
+.bg-primary{
+    background-color: var(--colorAzul)!important;
+}
+.distancia{
+    gap: 30px;
+}
+
+
+.contenedores-rojos{
+    padding: 0.2rem;
+    background-color: rgb(178, 113, 113);
+    border: solid 2px rgb(224, 37, 4);
+    color: rgb(0, 0, 0);
+
+}
+
+
+@media(min-width:768px){
+    .color-naranja{
+        background-color: #F90!important;
+    }
+    .contenedores-rojos{
+        background-color: blue;
+    }
+
+};
+
+/*
+gerarquias de CSS 
+ etiqueta < clase <id -> de mas generico a mas especifico. 
+ !important -> fuerzo que prevalezca esa propiedad por sobre el resto 
+
+ aprovechar que bootstrap en mobile first @media(min-width)
+
+ */
+
+/* gap -> generar espacio entre los elementos hijos de un elemento padre con display flex
+
+boostrap - gap-5*/
