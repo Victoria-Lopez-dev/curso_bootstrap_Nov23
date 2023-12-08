@@ -1,0 +1,18 @@
+:root{
+    --colorAzul:#425d8e;
+}
+
+/* form{
+    width: 733px;
+} */
+.form-check-input:checked {
+    background-color: brown;
+    border-color: crimson;
+}
+/* .active{
+    background-color: #f90!important;
+    border-radius: 50%;
+} */
+/* .btn{
+    background-color: var(--colorAzul);
+} */
