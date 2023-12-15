@@ -1,0 +1,22 @@
+h1{
+    font-size: 37px;
+    color: #F90;
+}
+.carousel-item{
+    height: 400px;
+}
+.card-size{
+    width: 18rem;
+}
+.num3{
+    font-size: 90px;
+    color: red;
+}
+
+
+/* bootstrap es mobile first */
+@media(min-width:990px){
+#primerCarousel{
+    width: 800px;
+}
+}

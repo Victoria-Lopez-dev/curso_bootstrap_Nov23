@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"><!-- CDN para traernos iconos(sin descargar)-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase -4 </title>
+</head>
+<body>
+    <h1 class="text-center">Utilizando componentes</h1>
+    <button class="btn btn-success">click</button>
+    <p class="alert alert-warning">Mensaje de alerta</p>
+
+    <!-- carousel -->
+    <section class="container-fluid ">
+        <div class="row bg-primary">
+
+            <div id="primerCarousel" class="carousel slide carousel-dark " data-bs-ride="carousel">
+                <div class="carousel-indicators"><!-- botonera inferior que se encuentra por encima de todos los slides-->
+                  <button type="button" data-bs-target="#primerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#primerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#primerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#primerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner"><!-- contenedor de todos los slides-->
+                  <div class="carousel-item active"><!-- contenedor de cada slide-->
+                    <img src="./imagenes/imagen1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./imagenes/img-card.jpg" class="d-block w-100" alt="imagen tarjeta">
+                
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./imagenes/fast-delivery.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Third slide label</h3>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./imagenes/hamburger.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Third slide label</h3>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#primerCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span><!-- icono de la fleca-->
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#primerCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+              </div>
+        </div>
+   </section>     
+    <section>
+        <div class="row">
+            <h2>Otra seccion</h2>
+            <div class="card card-size" >
+                <img src="./imagenes/product_2.jpg" class="card-img-top" alt="cohete">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://www.google.com" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card card-size" >
+                <img src="./imagenes/img-card.jpg" class="card-img-top" alt="cohete">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://www.google.com" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <img class="w-25 paz" src="./imagenes/peace.svg" alt="icono paz">
+       <a href="#">
+         <i class="bi bi-3-square-fill num3"></i>
+       </a>
+        <i class="bi bi-3-square-fill num3"></i><!-- icono de bootstrap,lo modificamos con propiedades de tipografia -->
+    </section>
+
+    <section class="my-5">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#primerModal">
+            Launch demo modal
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade " id="primerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
+                    <p>loribus qui corporis obcaecati omnis ratione voluptatem consectetur praesentium sed, voluptates sit reiciendis delectus incidunt consequatur harum. Hic eum, reiciendis nobis ad omnis vitae voluptate natus illum rem officia. Harum laudantium repellendus debitis provident.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium a consequuntur asperiores necessitatibus earum voluptatum voluptatem qui neque facilis, commodi ipsam, autem tempore velit iure recusandae fuga distinctio aperiam dolorum eius ea suscipit natus repellendus amet. Quas eveniet voluptates praesentium quidem expedita blanditiis quibusdam quos! Officiis quis nisi ipsam temporibus? Impedit consequatur unde recusandae assumenda inventore laborum odit, totam at dolores tempore animi quo similique nesciunt vel rerum voluptatum doloribus laboriosam quasi perferendis ut. Aspernatur illum ea quas laboriosam optio nulla officia earum, necessitatibus recusandae iure adipisci neque hic. Nesciunt minima, non pariatur a, natus nam aliquid eligendi vel labore, ad nulla ea doloremque maxime. Assumenda inventore minima possimus ipsum sunt atque fugiat tempore? Recusandae ipsum laboriosam corporis ullam esse! Voluptatibus praesentium id non delectus, quos inventore repudiandae, tempore libero recusandae error in quod hic. Laudantium rem laboriosam hic unde ea sapiente accusantium eos eveniet architecto ipsam, illum vel, pariatur sed assumenda et deserunt officiis corporis natus tempora, repellendus provident! Architecto illo doloremque voluptatibus minus optio doloribus qui corporis obcaecati omnis ratione voluptatem consectetur praesentium sed, voluptates sit reiciendis delectus incidunt consequatur harum. Hic eum, reiciendis nobis ad omnis vitae voluptate natus illum rem officia. Harum laudantium repellendus debitis provident.</p>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
+<!--
+    etiquetas de maquetacion - landmarks
+    tienen las mismas propiedades de un <div> nos da un poco mas de informacion de la zona/area del sitio 
+    <nav></nav>
+    <main>
+    <footer>
+    <section>
+    <article>
+
+    - sistema de grillas de Boostrap (container - row - col )
+    - para lo que no se adapte, agregamos @media en nuestro CSS
+
+-->
+
+<!--carousel: 
+    data-bs-interval= -> modificar los intervalso entre cada slide,
+    data-bs-ride="carousel" ->para un pasaje automatico -->
