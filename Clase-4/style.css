@@ -1,3 +1,6 @@
+body{
+    background-image: url("./imagenes/imagen1.jpeg");
+}
 h1{
     font-size: 37px;
     color: #F90;
